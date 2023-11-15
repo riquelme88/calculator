@@ -129,6 +129,7 @@ function result(){
 
 function reset(){
     screenDiv.innerHTML = ''
+    expression = []
 }
 
 function del(){
