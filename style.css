@@ -23,6 +23,10 @@ body{
     color: hsl(60, 10%, 19%);
 }
 
+h3{
+    margin-top: 15px;
+}
+
 .main-purple{
     background-color: hsl(268, 75%, 9%);
     color: hsl(52, 100%, 62%);
@@ -87,26 +91,39 @@ header{
 
 .first{
     background-color: hsl(6, 63%, 50%);
+    margin-left: -61.5px;
+}
+
+.first:hover{
+    background-color: hsl(6, 82%, 58%);
 }
 
 .second{
-    background-color: hsl(6, 63%, 50%);
+    background-color: hsl(25, 98%, 40%);
+    margin-left: -40px;
+}
+
+.second:hover{
+    background-color: hsl(25, 91%, 48%);
 }
 
 .third{
     background-color: hsl(176, 100%, 44%);
+    margin-left: -23px;
+}
+
+.third:hover{
+    background-color: hsl(176, 100%, 82%);
 }
 
 .check{
-    margin-left: -61.5px;
     width: 14px;
     height: 75%;
     border-radius: 50%;
     margin-top: 2.5px;
-    transition: all ease 0.5s;
+    transition: all ease 0.4s;
+    cursor: pointer;
 }
-
-
 
 .calculator{
     width: 30vw;

@@ -21,13 +21,13 @@
             <div class="form">
                 <span>theme</span>
                 <div class="container">
-                    <label class="label ">
+                    <label class="label" onclick="firstTema()">
                         <input type= "radio" checked = "checked" name="radio" class="input">
                     </label>
-                    <label class="label ">
+                    <label class="label " onclick="secondTema()">
                         <input type="radio" name="radio" class="input">
                     </label>
-                    <label class="label ">
+                    <label class="label " onclick="thirdTema()">
                         <input type="radio" name="radio" class="input">
                     </label>
                 </div>
@@ -42,34 +42,36 @@
         </section>
         <section class="keys blue-keys">
             <div class="key-column">
-                <div class="key-button">7</div>
-                <div class="key-button">8</div>
-                <div class="key-button">9</div>
-                <div class="key-button light-blue">del</div>
+                <div class="key-button" onclick="setCalc('7')">7</div>
+                <div class="key-button" onclick="setCalc('8')">8</div>
+                <div class="key-button" onclick="setCalc('9')">9</div>
+                <div class="key-button light-blue" onclick="del()">del</div>
             </div>
             <div class="key-column">
-                <div class="key-button">4</div>
-                <div class="key-button">5</div>
-                <div class="key-button">6</div>
-                <div class="key-button">+</div>
+                <div class="key-button" onclick="setCalc('4')">4</div>
+                <div class="key-button" onclick="setCalc('5')">5</div>
+                <div class="key-button" onclick="setCalc('6')">6</div>
+                <div class="key-button"  onclick="setCalc('+')">+</div>
             </div>
             <div class="key-column">
-                <div class="key-button">1</div>
-                <div class="key-button">2</div>
-                <div class="key-button">3</div>
-                <div class="key-button">-</div>
+                <div class="key-button" onclick="setCalc('1')">1</div>
+                <div class="key-button" onclick="setCalc('2')">2</div>
+                <div class="key-button" onclick="setCalc('3')">3</div>
+                <div class="key-button"  onclick="setCalc('-')">-</div>
             </div>
             <div class="key-column">
-                <div class="key-button">.</div>
-                <div class="key-button">0</div>
-                <div class="key-button">/</div>
-                <div class="key-button">x</div>
+                <div class="key-button" onclick="setCalc('.')">.</div>
+                <div class="key-button" onclick="setCalc('0')">0</div>
+                <div class="key-button" onclick="setCalc('/')">/</div>
+                <div class="key-button" onclick="setCalc('*')">x</div>
             </div>
             <div class="key-column">
-                <div class="key-button reset light-blue">reset</div>
-                <div class="key-button equals light-red">=</div>
+                <div class="key-button reset light-blue" onclick="reset()">reset</div>
+                <div class="key-button equals light-red" onclick="result()">=</div>
             </div>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
